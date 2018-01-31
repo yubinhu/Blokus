@@ -307,6 +307,7 @@ void setup_b(char gameBoard[BOARDSIZE + 2][BOARDSIZE + 2])
 }
 
 void setup_p(char pieces[4][21][5][5])
+
 {
 	// a color-yellow
 
@@ -605,6 +606,7 @@ void setup_p(char pieces[4][21][5][5])
 }
 
 int check_piece(char gameBoard[BOARDSIZE + 2][BOARDSIZE + 2], int boardX, int boardY, int playerNumber, int orientation, int piece)
+
 {
 
 	for (int p = 0; p < 4; p++)
@@ -860,6 +862,7 @@ int check_piece(char gameBoard[BOARDSIZE + 2][BOARDSIZE + 2], int boardX, int bo
 }
 
 int place_piece(int playerNumber, int piece, int orientation, int boardX, int boardY, int flip, char gameBoard[BOARDSIZE + 2][BOARDSIZE + 2], char pieces[4][21][5][5])
+
 {
 	int row, column;
 	char turned[5][5];
@@ -1004,6 +1007,7 @@ int game_over(int turnCounter)
 }
 
 void ori(int orientation, int playerNumber, int piece, char pieces[4][21][5][5], char result[5][5])
+
 {
 
 	char copy[5][5];
@@ -1066,7 +1070,7 @@ void ori(int orientation, int playerNumber, int piece, char pieces[4][21][5][5],
 }
 
 void fliped(int flip, char result[5][5])
-{}
+{
 	char copy[5][5];
 	for (int i = 0; i < 5; i++)
 	{
